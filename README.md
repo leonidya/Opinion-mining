@@ -22,4 +22,14 @@ The official link regarding the dataset with resources about how it was generate
 http://help.sentiment140.com/for-students 
 
 
+Pakages to install:
+1. nltk
+2. pandas
+3. sklearn
 
+Methology:
+1. Collect a dataset of texts annotated with opinions and emotions.
+2. Preprocess the data: lowercasing, tokenization, and removing stop words.
+3. Extract features from the text. Some potential features for this task might include word n-grams.
+4. Train a classifier on the extracted features: logistic regression, neural network.
+5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, and F1 score.

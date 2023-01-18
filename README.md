@@ -48,6 +48,7 @@ Precision: 0.49736716132120634
 Recall: 0.8793906051629284
 F1 score: 0.6353768536920961
 ![image](https://user-images.githubusercontent.com/53173112/213147017-00a5c762-48b3-4324-ac69-12ab1842f593.png)
+
 According to the results, the model seems to be better on recognizing negative sentiment. 
 
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.

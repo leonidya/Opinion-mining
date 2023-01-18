@@ -5,7 +5,7 @@ In the code provided, you will find the results of using different models, along
 2. Flair
 3. Zero-shot Sentiment Prediction
 
-------------------------------------------------Logistic Regresion for Sentiment Analysis - Part 1 --------------------------------------------------------------------
+------------------------------------------------Logistic Regresion for Sentiment Analysis - Part 1 ---------------------------------------
 
 Dataset: The Sentiment140 dataset is available as a CSV file at the following URL: http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip  You can download this file and extract it to obtain the dataset.
 
@@ -53,7 +53,7 @@ According to the results, the model seems to be better on recognizing negative s
 
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
 
---------------------------------------------------------------Flair part - 2 ------------------------------------------------------------------------------------------
+--------------------------------------------------------------Flair part - 2 ---------------------------------------------------------
 
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.
 

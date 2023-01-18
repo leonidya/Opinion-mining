@@ -2,8 +2,9 @@ In this small project, my goal was to explore different models and techniques in
 
 In the code provided, you will find the results of using different models, along with detailed comments and explanations. The code is divided into different sections:
 1. Logistic regresion - model was trained and evaluated on the dataset, and the results of using this model are presented in the code.
-2. Flair
-3. Zero-shot Sentiment Prediction
+2. NLTK: pretrained "SentimentIntensityAnalyzer"
+3. Flair
+4. Zero-shot Sentiment Prediction
 
 ------------------------------------------------Logistic Regresion for Sentiment Analysis - Part 1 ---------------------------------------
 

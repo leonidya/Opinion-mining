@@ -39,6 +39,7 @@ Results:
 
 On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked very well:
 A precision was 0.78 which means that the model makes very few false positive predictions (i.e. it correctly identifies a large proportion of positive cases). Recall is the proportion of true positive predictions among all actual positive cases. A recall was 0.81 which means that the model is identifying most of the actual positive cases. F1 score is the harmonic mean of precision and recall, and it combines both metrics into a single number. A F1 was 0.80 which indicates that the model has a good balance of precision and recall. In this case, the AUC score is 0.79, which means that the model is performing well. It is correctly distinguishing the positive class from the negative class with a good level of accuracy. 
+
 ![image](https://user-images.githubusercontent.com/53173112/213147178-b8e2590c-a026-460c-b4e4-2aa7caf73d8a.png)
 
 But then I used the same model on other data (from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment - I drop neutral sentiment):
@@ -48,6 +49,7 @@ Accuracy: 0.7933454639979205
 Precision: 0.49736716132120634
 Recall: 0.8793906051629284
 F1 score: 0.6353768536920961
+
 ![image](https://user-images.githubusercontent.com/53173112/213147017-00a5c762-48b3-4324-ac69-12ab1842f593.png)
 
 According to the results, the model seems to be better on recognizing negative sentiment. 

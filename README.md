@@ -74,7 +74,7 @@ Confusion Matrix
  
 Short Summary:
 
-It appears that the natural language processing (NLP) library NLTK is not accurately recognizing the sentiment of the text in the file. The main reason is not the model it's self, but the difficulty to make a decision ( NLTK gives an uoutput of dictionary, for example: {'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}
+It appears that the natural language processing (NLP) library NLTK is not accurately recognizing the sentiment of the text in the file. The main reason is not the model it's self, but the difficulty to make a decision ( NLTK gives an output of dictionary, for example: {'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}
 compound: a normalized score between -1 and 1, which indicates the overall sentiment of the text - sometimes we can have neutral 0.2, and neg 0.3, so is it neg or neutral? Now, we not always want to make specific desicion, for example in finance, when we want to make a sentiment analysis of the questions of analyst ask in earning calls. Maybe here we would like to have those 3 values in front of us, and then make a decision (hold, sell or buy). So this model will suit us well. But specifically in this project I want to recognize the sentiment of the text, where it will make a decision automatically - if it's positive, negative or neutral. Maybe because of the laziness, or maybe because this model doesn't fit, I would prefer to move to examine another models.
  
 --------------------------------------------Flair part - 2 ---------------------------------------------------------

@@ -56,7 +56,8 @@ According to the results, the model seems to be better on recognizing negative s
 
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
 
---------------------------------------------NLTK: pretrained "SentimentIntensityAnalyzer" --------------------------
+--------------------------------------------NLTK: PART -2 --------------------------------------------------------
+
 The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
 
 

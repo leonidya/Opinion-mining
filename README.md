@@ -56,6 +56,10 @@ According to the results, the model seems to be better on recognizing negative s
 
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
 
+--------------------------------------------NLTK: pretrained "SentimentIntensityAnalyzer" --------------------------
+The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
+
+
 --------------------------------------------Flair part - 2 ---------------------------------------------------------
 
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.

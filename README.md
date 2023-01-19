@@ -65,9 +65,10 @@ Precision(macro): 0.5407337365543334
 Precision(weighted): 0.7030271542285867
 Recall: 0.5298497267759563
 F1 score: 0.549293588567855
-Confusion Matrix [[4162 2806 2210]
-                  [ 335 1562 1202]
-                  [  70  260 2033]]
+Confusion Matrix
+[[4162 2806 2210]
+[ 335 1562 1202]
+[  70  260 2033]]
  
 Short Summary:
 

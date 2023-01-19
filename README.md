@@ -60,7 +60,19 @@ This model may not be the best choice for this dataset. So, I tried other models
 
 The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
 
+Precision(micro): 0.5298497267759563
+Precision(macro): 0.5407337365543334
+Precision(weighted): 0.7030271542285867
+Recall: 0.5298497267759563
+F1 score: 0.549293588567855
+Confusion Matrix [[4162 2806 2210]
+                  [ 335 1562 1202]
+                  [  70  260 2033]]
+ 
+Short Summary:
 
+It looks like it improved the precision but lowered the recall. It appears that the natural language processing (NLP) library NLTK is not accurately recognizing the sentiment of the text in the file.The main reason is not the model it's self, but the difficulty to make a decision. Now, we not always want to make specific desicion, for example in finance, when we want to make a sentiment analysis of the questions of analyst ask in earning calls. Maybe here we would like to have those 3 values in front of us, and then make a decision (hold, sell or buy). So this model will suit us well. But specifically in this project i want to recognize the sentiment of the text, where it will make a decision automatically - if it's positive, negative or neutral. Maybe because of the laziness, or maybe because this model doesn't fit, I would prefer to move to examine another models.
+ 
 --------------------------------------------Flair part - 2 ---------------------------------------------------------
 
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.

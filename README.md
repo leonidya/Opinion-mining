@@ -78,8 +78,40 @@ It appears that the natural language processing (NLP) library NLTK is not accura
 compound: a normalized score between -1 and 1, which indicates the overall sentiment of the text - sometimes we can have neutral 0.2, and neg 0.3, so is it neg or neutral? Now, we not always want to make specific desicion, for example in finance, when we want to make a sentiment analysis of the questions of analyst ask in earning calls. Maybe here we would like to have those 3 values in front of us, and then make a decision (hold, sell or buy). So this model will suit us well. But specifically in this project I want to recognize the sentiment of the text, where it will make a decision automatically - if it's positive, negative or neutral. Maybe because of the laziness, or maybe because this model doesn't fit, I would prefer to move to examine another models.
  
 --------------------------------------------Flair part - 2 ---------------------------------------------------------
-
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.
+
+On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well: 
+Accuracy: 0.700020625
+Precision: 0.702104065282986
+Recall: 0.69486625
+F1 score: 0.6984664077906559
+AUC score: 0.700020625
+Confusion Matrix
+
+[[564140 235860]
+[244107 555893]]
+ 
+![image](https://user-images.githubusercontent.com/53173112/213874540-c4ca0400-a717-4a48-8eef-b10bd998ec4f.png)
+![image](https://user-images.githubusercontent.com/53173112/213874585-a15f1de2-ae6a-45e5-9840-84c5da34cc7a.png)
+
+then I used Flair on other data (from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment - I drop neutral sentiment):
+
+Accuracy: 0.8680356988129279
+Precision: 0.6328273244781784
+Recall: 0.8468049090139653
+F1 score: 0.7243438914027149
+AUC score: 0.8601533806346793
+Confusion Matrix 
+
+[[8017 1161]
+ [ 362 2001]]
+ 
+![image](https://user-images.githubusercontent.com/53173112/213874687-d4f4630d-e564-4a0e-96ea-fd11c89f4d11.png)
+![image](https://user-images.githubusercontent.com/53173112/213874716-122cb12f-737e-4885-9db6-f18c1429fe88.png)
+
+Summary:
+
+As we can see, the model (logistic regression)  that has been pre-trained on unique data gives better results, at the same time, on the new data (which is a little different, and as we would expect)  results which are not impressive. FLAIR, however, gave worse brings relatively good results on the first data set, and better results on the second data set. Apparently Flair, deals better with different types of data, the model is more holistic. However, when there is enough labeled data it is better to make your own model, it will bring much better results.
 
 -------------------------------------------Zero-shot Sentiment Prediction Part - 3 ---------------------------------
 

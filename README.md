@@ -46,8 +46,11 @@ But then I used the same model on other data (from https://www.kaggle.com/datase
 In my opnion, after some manual review of the twitter comments, sometimes it's hard to say if it's positive or not, they are more neutral. 
 
 Accuracy: 0.7933454639979205
+
 Precision: 0.49736716132120634
+
 Recall: 0.8793906051629284
+
 F1 score: 0.6353768536920961
 
 ![image](https://user-images.githubusercontent.com/53173112/213147017-00a5c762-48b3-4324-ac69-12ab1842f593.png)
@@ -61,9 +64,13 @@ This model may not be the best choice for this dataset. So, I tried other models
 The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
 
 Precision(micro): 0.5298497267759563
+
 Precision(macro): 0.5407337365543334
+
 Precision(weighted): 0.7030271542285867
+
 Recall: 0.5298497267759563
+
 F1 score: 0.549293588567855
 
 Confusion Matrix
@@ -104,10 +111,15 @@ Confusion Matrix
 then I used Flair on other data (from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment - I drop neutral sentiment):
 
 Accuracy: 0.8680356988129279
+
 Precision: 0.6328273244781784
+
 Recall: 0.8468049090139653
+
 F1 score: 0.7243438914027149
+
 AUC score: 0.8601533806346793
+
 Confusion Matrix 
 
 [[8017 1161]

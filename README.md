@@ -82,11 +82,17 @@ compound: a normalized score between -1 and 1, which indicates the overall senti
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.
 
 On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well: 
+
 Accuracy: 0.700020625
+
 Precision: 0.702104065282986
+
 Recall: 0.69486625
+
 F1 score: 0.6984664077906559
+
 AUC score: 0.700020625
+
 Confusion Matrix
 
 [[564140 235860]

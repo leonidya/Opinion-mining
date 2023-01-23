@@ -142,7 +142,7 @@ On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well:
 ![image](https://user-images.githubusercontent.com/53173112/214004374-d083f97d-2235-45c1-a2f5-43446d91d5a7.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004424-81ef4990-9336-49b3-ada1-2f2c1505651f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004523-6c58223b-27f7-4ad1-bbf6-d8888449b94c.png)
-It did better than flair 
+It did better than flair - but it's hard to compare - I runned Flair on all the data, BUT Zero-shot Sentiment Prediction took a lot of time (~1.5days). So i decided to run in on a sample. 
 
 But on data ( tweets about airlane companies) where it has also neutral label:
 ![image](https://user-images.githubusercontent.com/53173112/214004787-78388731-9b26-46c9-ac03-c3fe79d3a02b.png)
@@ -152,8 +152,27 @@ But on data ( tweets about airlane companies) where it has also neutral label:
 (better to recognize negative sentiment)
 
 Now let's check on the same data without neutral label in order to compare with Flair, results:  
+![image](https://user-images.githubusercontent.com/53173112/214011636-120c2004-55f3-4767-b45c-0d66612d9d0b.png)
 
+pos_label="negative":
+Accuracy: 0.9188111948704618
 
+Precision: 0.9840244332197815
 
+Recall: 0.9127260841141861
 
+F1 score: 0.9470352156463738
 
+pos_label="positive":
+
+Accuracy: 0.9188111948704618
+
+Precision: 0.7354689564068693
+
+Recall: 0.9424460431654677
+
+F1 score: 0.826191801150065
+
+![image](https://user-images.githubusercontent.com/53173112/214012023-cc7f5ab5-8ab5-4dbc-9d74-597cf9e47408.png)
+
+![image](https://user-images.githubusercontent.com/53173112/214012081-e948e4f4-d3ff-42b5-9faa-43e68a97e7b9.png)

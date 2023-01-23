@@ -184,5 +184,5 @@ Summary: Hugging Face Zero-shot - is doing much better than flair (on both data 
 --------------------------------------------------------------Textblob Part - 5-----------------------------------------
 
 Bad performance on my specific data, speccialy on tweets. In my opnion, it's the threeshold reason: 
-data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) no simple solution, i tried to play with different threesholds but it din't improve the results ( take a look in code )
+data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) no simple solution, I tried to play with different threesholds but it din't improve the results ( take a look in code )
 

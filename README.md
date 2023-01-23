@@ -176,3 +176,5 @@ F1 score: 0.826191801150065
 ![image](https://user-images.githubusercontent.com/53173112/214012023-cc7f5ab5-8ab5-4dbc-9d74-597cf9e47408.png)
 
 ![image](https://user-images.githubusercontent.com/53173112/214012081-e948e4f4-d3ff-42b5-9faa-43e68a97e7b9.png)
+
+Summary: Hugging Face Zero-shot - is doing much better than flair (on both data sets), in recognizing Negative and Positive, with 0.93 AUC vs 0.86. 

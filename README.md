@@ -130,8 +130,10 @@ But on data ( tweets about airlane companies) where it has also neutral label:
 ![image](https://user-images.githubusercontent.com/53173112/214004787-78388731-9b26-46c9-ac03-c3fe79d3a02b.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004839-3293b67a-17e1-4e8f-a053-dc54262a71e5.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004879-c72ce459-96e6-4095-96bb-bd2a67eda0d1.png)
+
 (better to recognize negative sentiment)
 
+Now let's check on the same data without neutral label in order to compare with Flair, results:  
 
 
 

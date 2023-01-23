@@ -142,6 +142,7 @@ On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well:
 ![image](https://user-images.githubusercontent.com/53173112/214004374-d083f97d-2235-45c1-a2f5-43446d91d5a7.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004424-81ef4990-9336-49b3-ada1-2f2c1505651f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004523-6c58223b-27f7-4ad1-bbf6-d8888449b94c.png)
+
 It did better than flair - but it's hard to compare - I runned Flair on all the data, BUT Zero-shot Sentiment Prediction took a lot of time (~1.5days). So i decided to run in on a sample. 
 
 But on data ( tweets about airlane companies) where it has also neutral label:

@@ -117,3 +117,23 @@ As we can see, the model (logistic regression)  that has been pre-trained on uni
 -------------------------------------------Zero-shot Sentiment Prediction Part - 3 ---------------------------------
 
 Zero-shot Sentiment Prediction - Zero-shot Sentiment Prediction is a natural language processing technique that uses pre-trained models to classify the sentiment of a given text without any fine-tuning on a specific dataset. This is achieved by training models on a large amount of text data, which allows the model to learn general sentiment-related features that can be applied to a wide range of texts. The zero-shot sentiment prediction model provided by Hugging Face utilizes a transformer-based architecture and has been pre-trained on a large dataset of text from various sources, including social media and online reviews. This allows the model to understand the nuances of natural language and to accurately classify text as having a positive, negative, or neutral sentiment. The zero-shot sentiment prediction model is useful for applications such as analyzing customer reviews, gauging public opinion on social media, and monitoring brand reputation. It can be used to quickly classify large amounts of text data and can be integrated into various NLP pipelines.
+
+On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well: 
+
+![image](https://user-images.githubusercontent.com/53173112/214004292-f350aca7-29c7-45b0-9a22-9992fca1b320.png)
+![image](https://user-images.githubusercontent.com/53173112/214004374-d083f97d-2235-45c1-a2f5-43446d91d5a7.png)
+![image](https://user-images.githubusercontent.com/53173112/214004424-81ef4990-9336-49b3-ada1-2f2c1505651f.png)
+![image](https://user-images.githubusercontent.com/53173112/214004523-6c58223b-27f7-4ad1-bbf6-d8888449b94c.png)
+It did better than flair 
+
+But on data ( tweets about airlane companies) where it has also neutral label:
+![image](https://user-images.githubusercontent.com/53173112/214004787-78388731-9b26-46c9-ac03-c3fe79d3a02b.png)
+![image](https://user-images.githubusercontent.com/53173112/214004839-3293b67a-17e1-4e8f-a053-dc54262a71e5.png)
+![image](https://user-images.githubusercontent.com/53173112/214004879-c72ce459-96e6-4095-96bb-bd2a67eda0d1.png)
+(better to recognize negative sentiment)
+
+
+
+
+
+

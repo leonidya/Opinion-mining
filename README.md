@@ -5,6 +5,7 @@ In the code provided, you will find the results of using different models, along
 2. NLTK: pretrained "SentimentIntensityAnalyzer"
 3. Flair
 4. Zero-shot Sentiment Prediction
+5. Textblob
 
 ------------------------------Logistic Regresion for Sentiment Analysis - Part 1 ---------------------------------------
 
@@ -179,3 +180,7 @@ F1 score: 0.826191801150065
 ![image](https://user-images.githubusercontent.com/53173112/214012081-e948e4f4-d3ff-42b5-9faa-43e68a97e7b9.png)
 
 Summary: Hugging Face Zero-shot - is doing much better than flair (on both data sets), in recognizing Negative and Positive, with 0.93 AUC vs 0.86. About the model it's self, it's better on negative sentiment. 
+--------------------------------------------------------------Textblob Part - 5-----------------------------------------
+Bad performance on my specific data, speccialy on tweets. In my opnion, it's the threeshold reason: 
+data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) no simple solution, i tried to play with different threesholds but it din't improve the results ( take a look in code )
+

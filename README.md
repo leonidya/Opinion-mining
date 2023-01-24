@@ -4,6 +4,7 @@ In the code provided, you will find the results of using different models, along
 
 1. Logistic regresion - model was trained and evaluated on the dataset, and the results of using this model are presented in the code.
 2. SVD - Logistic regresion. 
+3. SVD-XGBoost
 
 Pretrained models:
 3. NLTK: pretrained "SentimentIntensityAnalyzer"
@@ -72,9 +73,19 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265458-5e3e593b-99ef-44b0-b0cf-c69df2fe909f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214265605-f83497f8-b375-494c-b701-87aa03bd9b70.png)
 
-Results: It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT,  In some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features. This wasn't the case. 
+Summary: It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT,  In some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features. This wasn't the case. 
 
---------------------------------------------NLTK: PART -3 --------------------------------------------------------
+-----------------------------------------SVD - Xgboost Part - 3 ---------------------------------------
+
+Results:
+![image](https://user-images.githubusercontent.com/53173112/214273179-d1a3df84-dfbd-4dd8-9007-c810025dd49d.png)
+![image](https://user-images.githubusercontent.com/53173112/214273331-5440dedb-4a28-491c-8377-624bdf9013ee.png)
+![image](https://user-images.githubusercontent.com/53173112/214273360-c47133c2-c066-410b-aa1f-4935828a926d.png)
+![image](https://user-images.githubusercontent.com/53173112/214273422-18d549a3-1443-42af-9730-33c515c8583d.png)
+Summary: it's look like it's doing better than SVD - Logistic regresion, but underperform comparing to regular logistic regresion.
+
+
+--------------------------------------------NLTK: PART - 4 --------------------------------------------------------
 
 The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
 
@@ -99,7 +110,7 @@ Short Summary:
 It appears that the natural language processing (NLP) library NLTK is not accurately recognizing the sentiment of the text in the file. The main reason is not the model it's self, but the difficulty to make a decision ( NLTK gives an output of dictionary, for example: {'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}
 compound: a normalized score between -1 and 1, which indicates the overall sentiment of the text - sometimes we can have neutral 0.2, and neg 0.3, so is it neg or neutral? Now, we not always want to make specific desicion, for example in finance, when we want to make a sentiment analysis of the questions of analyst ask in earning calls. Maybe here we would like to have those 3 values in front of us, and then make a decision (hold, sell or buy). So this model will suit us well. But specifically in this project I want to recognize the sentiment of the text, where it will make a decision automatically - if it's positive, negative or neutral. Maybe because of the laziness, or maybe because this model doesn't fit, I would prefer to move to examine another models.
  
---------------------------------------------Flair part - 4 ---------------------------------------------------------
+--------------------------------------------Flair part - 5 ---------------------------------------------------------
 
 Flair - FLAIR is an open-source natural language processing library for state-of-the-art text classification, language modeling, and named entity recognition tasks. One of the key features of FLAIR is its ability to perform sentiment analysis, which is the process of determining the emotional tone of a piece of text. Sentiment analysis is often used to gauge public opinion on a particular topic or to measure the success of a marketing campaign. The library allows to train custom models and fine-tune pre-trained models on specific tasks and languages. It also provides a simple API to use these models in different programming languages.
 
@@ -147,7 +158,7 @@ Summary:
 
 As we can see, the model (logistic regression)  that has been pre-trained on unique data gives better results, at the same time, on the new data (which is a little different, and as we would expect)  results which are not impressive. FLAIR, however, gave worse brings relatively good results on the first data set, and better results on the second data set. Apparently Flair, deals better with different types of data, the model is more holistic. However, when there is enough labeled data it is better to make your own model, it will bring much better results.
 
--------------------------------------------Zero-shot Sentiment Prediction Part - 5 ---------------------------------
+-------------------------------------------Zero-shot Sentiment Prediction Part - 6 ---------------------------------
 
 Zero-shot Sentiment Prediction - Zero-shot Sentiment Prediction is a natural language processing technique that uses pre-trained models to classify the sentiment of a given text without any fine-tuning on a specific dataset. This is achieved by training models on a large amount of text data, which allows the model to learn general sentiment-related features that can be applied to a wide range of texts. The zero-shot sentiment prediction model provided by Hugging Face utilizes a transformer-based architecture and has been pre-trained on a large dataset of text from various sources, including social media and online reviews. This allows the model to understand the nuances of natural language and to accurately classify text as having a positive, negative, or neutral sentiment. The zero-shot sentiment prediction model is useful for applications such as analyzing customer reviews, gauging public opinion on social media, and monitoring brand reputation. It can be used to quickly classify large amounts of text data and can be integrated into various NLP pipelines.
 
@@ -195,7 +206,7 @@ F1 score: 0.826191801150065
 
 Summary: Hugging Face Zero-shot - is doing much better than flair (on both data sets), in recognizing Negative and Positive, with 0.93 AUC vs 0.86. About the model it's self, it's better on negative sentiment. 
 
---------------------------------------------------------------Textblob Part - 6-----------------------------------------
+--------------------------------------------------------------Textblob Part - 7 -----------------------------------------
 
 Bad performance on my specific data, speccialy on tweets. In my opnion, it's the threeshold reason: 
 data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) no simple solution, I tried to play with different threesholds but it din't improve the results ( take a look to the code )

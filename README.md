@@ -65,6 +65,7 @@ According to the results, the model seems to be better on recognizing negative s
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
 
 -----------------------------------------SVD - Logistic Regresion Part - 2 ---------------------------------------
+
 Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265315-340e4879-8983-4f72-a93b-c5bd298d539b.png)
 ![image](https://user-images.githubusercontent.com/53173112/214265399-0cc63184-2d61-41fa-9620-594a417d6999.png)

@@ -82,6 +82,7 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214273331-5440dedb-4a28-491c-8377-624bdf9013ee.png)
 ![image](https://user-images.githubusercontent.com/53173112/214273360-c47133c2-c066-410b-aa1f-4935828a926d.png)
 ![image](https://user-images.githubusercontent.com/53173112/214273422-18d549a3-1443-42af-9730-33c515c8583d.png)
+
 Summary: it's look like it's doing better than SVD - Logistic regresion, but underperform comparing to regular logistic regresion.
 
 

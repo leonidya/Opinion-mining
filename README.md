@@ -95,6 +95,7 @@ Summary: it's look like it's doing better than SVD - Logistic regresion.
 
 -------------------------------------------Pretrained Glove embedings with Logit model---------------------------------------------------
 
+
 results:
 
 ![image](https://user-images.githubusercontent.com/53173112/214481533-3ff1dd4c-6d41-43ae-99b1-8fbbe6324104.png)
@@ -103,7 +104,7 @@ results:
 ![image](https://user-images.githubusercontent.com/53173112/214481653-5175f4ec-6fd4-4eed-9660-052944169054.png)
 
 Summary:
-
+Pretrained Glove embedings with Logit model until now is giving the best results. 
 
 --------------------------------------------NLTK: PART - 4 --------------------------------------------------------
 

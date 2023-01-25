@@ -32,11 +32,17 @@ It's important to note, that that the performance of a sentiment analysis model 
 The Sentiment140 dataset is a large dataset of tweets that have been annotated with sentiment labels (0 = negative, 4 = positive). The dataset contains 1.6 million tweets and is available for download as a CSV file at the URL http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip. The dataset contains 6 fields:
 
 **target**: the polarity of the tweet (0 = negative, 2 = neutral ( no neutral in this data) , 4 = positive)
+
 **ids**: The id of the tweet (for example 2087)
+
 **date**: the date of the tweet (for example: Sat May 16 23:58:44 UTC 2009)
+
 **flag**: The query (lyx). If there is no query, then this value is NO_QUERY.
+
 **user**: the user that tweeted (for example: robotickilldozr)
+
 **text**: the text of the tweet (for example: Lyx is cool)
+
 It was extracted using the twitter API and can be used for sentiment analysis. The official website for the dataset with resources about how it was generated is http://help.sentiment140.com/for-students.
 
 Methology:

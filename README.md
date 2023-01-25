@@ -6,6 +6,12 @@ In the code provided, you will find the results of using different models, along
 2. SVD - Logistic regresion. 
 3. SVD-XGBoost
 
+Using Glove: (GloVe (Global Vectors for Word Representation) is a pre-trained word embedding model that can be used to represent words as numerical vectors).
+
+1. Pretrained Glove embedings with Logit model
+
+
+
 Pretrained models:
 
 3. NLTK: pretrained "SentimentIntensityAnalyzer"
@@ -85,6 +91,18 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214273422-18d549a3-1443-42af-9730-33c515c8583d.png)
 
 Summary: it's look like it's doing better than SVD - Logistic regresion, but underperform comparing to regular logistic regresion.
+
+
+-------------------------------------------Pretrained Glove embedings with Logit model---------------------------------------------------
+
+results:
+
+![image](https://user-images.githubusercontent.com/53173112/214481533-3ff1dd4c-6d41-43ae-99b1-8fbbe6324104.png)
+![image](https://user-images.githubusercontent.com/53173112/214481581-01309141-f795-464f-b660-e383154f55ca.png)
+![image](https://user-images.githubusercontent.com/53173112/214481617-2a444a3a-76ea-4c20-849e-5cd0bfb36738.png)
+![image](https://user-images.githubusercontent.com/53173112/214481653-5175f4ec-6fd4-4eed-9660-052944169054.png)
+
+Summary:
 
 
 --------------------------------------------NLTK: PART - 4 --------------------------------------------------------

@@ -80,7 +80,7 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265458-5e3e593b-99ef-44b0-b0cf-c69df2fe909f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214265605-f83497f8-b375-494c-b701-87aa03bd9b70.png)
 
-Summary: It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT,  In some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features. This wasn't the case. 
+Summary: It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT,  In some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features. 
 
 -----------------------------------------SVD - Xgboost Part - 3 ---------------------------------------
 
@@ -90,7 +90,7 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214273360-c47133c2-c066-410b-aa1f-4935828a926d.png)
 ![image](https://user-images.githubusercontent.com/53173112/214273422-18d549a3-1443-42af-9730-33c515c8583d.png)
 
-Summary: it's look like it's doing better than SVD - Logistic regresion, but underperform comparing to regular logistic regresion.
+Summary: it's look like it's doing better than SVD - Logistic regresion.
 
 
 -------------------------------------------Pretrained Glove embedings with Logit model---------------------------------------------------

@@ -53,6 +53,7 @@ Methology:
 5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, F1 score, ctr.
 
 ## Part 1:  $\textcolor{green} **Logistic Regresion for Sentiment Analysis $**
+<span color="red">red</span>
 
 Results:
 

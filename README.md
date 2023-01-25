@@ -57,25 +57,21 @@ Methology:
 
 Results:
 
-It looks like model performed well on the Sentiment140 dataset. The precision of 0.78 means that the model makes very few false positive predictions (i.e. it correctly identifies a large proportion of positive cases). Recall of 0.81 indicates that the model is identifying most of the actual positive cases. The F1 score of 0.80 is a harmonic mean of precision and recall, and it combines both metrics into a single number, it indicates that the model has a good balance of precision and recall.
+![image](https://user-images.githubusercontent.com/53173112/214599299-d6f3e7b3-2657-455f-80df-4d3af5d58192.png)
+![image](https://user-images.githubusercontent.com/53173112/214599366-35096160-18d6-4e74-9ab6-bea54b1d6393.png)
+![image](https://user-images.githubusercontent.com/53173112/214599414-03340fba-2652-4e3b-818e-eb8446767338.png)
+![image](https://user-images.githubusercontent.com/53173112/214599488-87e26e2b-7504-4621-b298-4068550036a7.png)
+
+It looks like model performed well on the Sentiment140 dataset. The precision of 0.78 means that the model makes very few false positive predictions (i.e. it correctly identifies a large proportion of positive cases). Recall of 0.81 indicates that the model is identifying most of the actual positive cases. The F1 score of ~0.80 is a harmonic mean of precision and recall, and it combines both metrics into a single number, it indicates that the model has a good balance of precision and recall.
 
 Additionally, the AUC score of 0.79 indicates that the model is performing well. AUC (Area Under the Receiver Operating Characteristic Curve) is a metric used to evaluate binary classification models. It measures the ability of the model to distinguish between the positive and negative classes. A score of 0.79 means that the model is correctly distinguishing the positive class from the negative class with a good level of accuracy.
 
 Overall, these results suggest that the Logistic Regresion has a good performance on the Sentiment140 dataset, with a good balance of precision and recall, and a high accuracy in classifying tweets as positive or negative.
 
-![image](https://user-images.githubusercontent.com/53173112/213147178-b8e2590c-a026-460c-b4e4-2aa7caf73d8a.png)
+**BUT** model's performance on the new dataset, which is sourced from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment, was not as good as it was on the Sentiment140 dataset. The accuracy, precision, recall and F1 score values are lower than the previous one, and it seems that the model is better at recognizing negative sentiment than positive sentiment. This new dataset may have different characteristics than the Sentiment140 dataset, such as different vocabulary and language structure, which may have affected the model's performance. Additionally,  some comments in the new dataset are more neutral, which may have made it harder for the model to classify them as positive or negative(in data set - more negative sampels).
 
-**BUT** model's performance on the new dataset, which is sourced from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment, was not as good as it was on the Sentiment140 dataset. The accuracy, precision, recall and F1 score values are lower than the previous one, and it seems that the model is better at recognizing negative sentiment than positive sentiment. This new dataset may have different characteristics than the Sentiment140 dataset, such as different vocabulary and language structure, which may have affected the model's performance. Additionally,  some comments in the new dataset are more neutral, which may have made it harder for the model to classify them as positive or negative.
-
-Accuracy: 0.7933454639979205
-
-Precision: 0.49736716132120634
-
-Recall: 0.8793906051629284
-
-F1 score: 0.6353768536920961
-
-![image](https://user-images.githubusercontent.com/53173112/213147017-00a5c762-48b3-4324-ac69-12ab1842f593.png)
+![image](https://user-images.githubusercontent.com/53173112/214601504-41a86d66-3624-492d-91f6-3dbcfbb5f34b.png)
+![image](https://user-images.githubusercontent.com/53173112/214601567-15aeb02e-3c63-4c9e-b65f-457f89d8f215.png)
 
 This model may not be the best choice for the new dataset. So, I tried other models/techniques to improve the results.
 

@@ -126,23 +126,23 @@ Glove + XGBoost 5 - gives us little bit better results than Glove embedings with
 
 ## Part 6: NLTK
 
-The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. To use the SentimentIntensityAnalyzer, you will first need to install NLTK and then import the model. 
+The Natural Language Toolkit (NLTK) is a Python library for working with human language data. One of the pre-trained models available in NLTK is the SentimentIntensityAnalyzer, which can be used to determine the sentiment (positive, negative, or neutral) of a given piece of text. It uses a combination of lexical heuristics and a pre-trained neural network to make its predictions. I used this model on the second set of data. 
 
-Precision(micro): 0.5298497267759563
+3 labels: (positive, neutral and negative)
 
-Precision(macro): 0.5407337365543334
-
-Precision(weighted): 0.7030271542285867
-
-Recall: 0.5298497267759563
-
-F1 score: 0.549293588567855
+![image](https://user-images.githubusercontent.com/53173112/214603811-e41627ce-ecc4-48a1-8a42-0b01d779f7cd.png)
+![image](https://user-images.githubusercontent.com/53173112/214603853-108c9e64-5749-4b24-868f-2694f8c341f4.png)
 
 Confusion Matrix
 
-[[4162 2806 2210]
-[ 335 1562 1202]
-[  70  260 2033]]
+![image](https://user-images.githubusercontent.com/53173112/214604025-43b0d779-cb8a-4af4-af43-df182f2c4d26.png)
+
+Change the threshold to 0.2:
+![image](https://user-images.githubusercontent.com/53173112/214604510-738c5bdc-2331-4476-ac26-af18c0642de2.png)
+![image](https://user-images.githubusercontent.com/53173112/214604559-05d85ae3-0a55-4634-8382-3db51fd59d0e.png)
+![image](https://user-images.githubusercontent.com/53173112/214604681-a5907a30-9063-470e-a30c-df0f1d619f08.png)
+
+It looks like it improved the precision but lowered the recall. 
  
 Short Summary:
 

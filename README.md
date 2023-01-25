@@ -2,19 +2,21 @@ In this project, the objective was to investigate various models and techniques 
 
 The code I provided is divided into different sections that cover various models and techniques for sentiment analysis.
 
-The first section - uses **logistic regression** to train and evaluate the model on a dataset, and the results are presented in the code.
-The second section -  uses **singular value decomposition (SVD)** in combination with **logistic regression**.
-The third section - uses **SVD in combination with XGBoost**.
+1. **Logistic Regression** 
+2. **Singular Value Decomposition (SVD)** in combination with **Logistic Regression**.
+3. **SVD in combination with XGBoost**.
 
 The next sections utilize **GloVe** (Global Vectors for Word Representation) which is a pre-trained word embedding model, to represent words as numerical vectors:
-The fourth section - uses **pretrained GloVe embeddings with a logistic regression model**.
-The fifth section - uses **GloVe in combination with XGBoost**.
+
+4. **pretrained GloVe - Logistic Regression model**.
+5. **GloVe - XGBoost**.
 
 The final sections use pretrained models:
-The sixth section - uses the **NLTK** (Natural Language Toolkit) library's pretrained "SentimentIntensityAnalyzer"
-The seventh section - uses the **Flair** library
-The eighth section - uses **zero-shot sentiment prediction**
-The ninth section - uses **Textblob library**
+
+6. **NLTK** (Natural Language Toolkit) library's pretrained "SentimentIntensityAnalyzer"
+7. **Flair** 
+8. **Zero-Shot Sentiment Prediction**
+9. **Textblob library**
 
 The code also includes detailed comments and explanations to guide the understanding of the methodology and results of each section.
 

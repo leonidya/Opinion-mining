@@ -71,6 +71,7 @@ Overall, these results suggest that the Logistic Regresion has a good performanc
 **BUT** model's performance on the new dataset, which is sourced from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment, was not as good as it was on the Sentiment140 dataset. The accuracy, precision, recall and F1 score values are lower than the previous one, and it seems that the model is better at recognizing negative sentiment than positive sentiment. This new dataset may have different characteristics than the Sentiment140 dataset, such as different vocabulary and language structure, which may have affected the model's performance. Additionally,  some comments in the new dataset are more neutral, which may have made it harder for the model to classify them as positive or negative(in data set - more negative sampels).
 
 ![image](https://user-images.githubusercontent.com/53173112/214601504-41a86d66-3624-492d-91f6-3dbcfbb5f34b.png)
+![image](https://user-images.githubusercontent.com/53173112/214602109-3dea0b0e-f6f9-4c98-a0c4-8c339ab9ea57.png)
 ![image](https://user-images.githubusercontent.com/53173112/214601567-15aeb02e-3c63-4c9e-b65f-457f89d8f215.png)
 
 This model may not be the best choice for the new dataset. So, I tried other models/techniques to improve the results.

@@ -18,7 +18,7 @@ The ninth section - uses **Textblob library**
 
 The code also includes detailed comments and explanations to guide the understanding of the methodology and results of each section.
 
-##WHY I DID IT?
+## WHY I DID IT?
 As we all know, Sentiment analysis is an important task in natural language processing because it allows for the automatic identification of opinions and emotions expressed in text. This can be useful in a wide range of applications such as social media analysis, customer feedback analysis, and opinion mining.
 
 By exploring different models and techniques for sentiment analysis on the Sentiment140 dataset, I can gain insight into the performance of different approaches and understand which methods may be more effective for different types of data. Additionally, understanding the performance on a benchmark dataset such as Sentiment140, can give me an intuition about how well a model might perform on other datasets. By conducting this analysis, I can gain a deeper understanding of the capabilities and limitations of different models and techniques for sentiment analysis and make informed decisions about which methods to use for specific tasks and data types.

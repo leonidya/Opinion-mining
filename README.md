@@ -52,8 +52,8 @@ Methology:
 4. Train a classifier on the extracted features: for example - logistic regression (part 1). 
 5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, F1 score, ctr.
 
-```diff
-## Part 1: + **Logistic Regresion for Sentiment Analysis ** ```
+
+## Part 1: + **Logistic Regresion for Sentiment Analysis **
 
 Results:
 

@@ -1,10 +1,3 @@
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
 In this project, the objective was to investigate various models and techniques with the aim of enhancing the outcomes of sentiment analysis, also referred to as opinion mining. The objective of sentiment analysis is to discern the emotions and opinions articulated in written text, specifically determining if the sentiment is positive or negative in this instance.
 
 The code I provided is divided into different sections that cover various models and techniques for sentiment analysis.
@@ -59,7 +52,8 @@ Methology:
 4. Train a classifier on the extracted features: for example - logistic regression (part 1). 
 5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, F1 score, ctr.
 
-## Part 1:  **Logistic Regresion for Sentiment Analysis **
+```diff
+## Part 1: + **Logistic Regresion for Sentiment Analysis **```
 
 Results:
 

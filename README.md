@@ -44,7 +44,7 @@ Methology:
 4. Train a classifier on the extracted features: for example - logistic regression (part 1). 
 5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, F1 score, ctr.
 
-##Part 1: **Logistic Regresion for Sentiment Analysis**
+## Part 1: **Logistic Regresion for Sentiment Analysis**
 
 Results:
 
@@ -70,7 +70,7 @@ According to the results, the model seems to be better on recognizing negative s
 
 This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
 
------------------------------------------SVD - Logistic Regresion Part - 2 ---------------------------------------
+## Part 2: SVD - Logistic Regresion
 
 Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265315-340e4879-8983-4f72-a93b-c5bd298d539b.png)

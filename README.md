@@ -1,52 +1,50 @@
-In this small project, my goal was to explore different models and techniques in order to achieve better results for sentiment analysis (also known as opinion mining). The task of sentiment analysis is to identify the opinions and emotions expressed in text, specifically in this case, determining whether the sentiment is positive or negative.
+In this project, the objective was to investigate various models and techniques with the aim of enhancing the outcomes of sentiment analysis, also referred to as opinion mining. The objective of sentiment analysis is to discern the emotions and opinions articulated in written text, specifically determining if the sentiment is positive or negative in this instance.
 
-In the code provided, you will find the results of using different models, along with detailed comments and explanations. The code is divided into different sections:
+The code I provided is divided into different sections that cover various models and techniques for sentiment analysis.
 
-1. Logistic regresion - model was trained and evaluated on the dataset, and the results of using this model are presented in the code.
-2. SVD - Logistic regresion. 
-3. SVD-XGBoost
+The first section - uses **logistic regression** to train and evaluate the model on a dataset, and the results are presented in the code.
+The second section -  uses **singular value decomposition (SVD)** in combination with **logistic regression**.
+The third section - uses **SVD in combination with XGBoost**.
 
-Using Glove: (GloVe (Global Vectors for Word Representation) is a pre-trained word embedding model that can be used to represent words as numerical vectors).
+The next sections utilize **GloVe** (Global Vectors for Word Representation) which is a pre-trained word embedding model, to represent words as numerical vectors:
+The fourth section - uses **pretrained GloVe embeddings with a logistic regression model**.
+The fifth section - uses **GloVe in combination with XGBoost**.
 
-4. Pretrained Glove embedings with Logit model
-5. Glove + XGBoost
+The final sections use pretrained models:
+The sixth section - uses the **NLTK** (Natural Language Toolkit) library's pretrained "SentimentIntensityAnalyzer"
+The seventh section - uses the **Flair** library
+The eighth section - uses **zero-shot sentiment prediction**
+The ninth section - uses **Textblob library**
 
+The code also includes detailed comments and explanations to guide the understanding of the methodology and results of each section.
 
-Pretrained models:
+##WHY I DID IT?
+As we all know, Sentiment analysis is an important task in natural language processing because it allows for the automatic identification of opinions and emotions expressed in text. This can be useful in a wide range of applications such as social media analysis, customer feedback analysis, and opinion mining.
 
-6. NLTK: pretrained "SentimentIntensityAnalyzer"
-7. Flair
-8. Zero-shot Sentiment Prediction
-9. Textblob
+By exploring different models and techniques for sentiment analysis on the Sentiment140 dataset, I can gain insight into the performance of different approaches and understand which methods may be more effective for different types of data. Additionally, understanding the performance on a benchmark dataset such as Sentiment140, can give me an intuition about how well a model might perform on other datasets. By conducting this analysis, I can gain a deeper understanding of the capabilities and limitations of different models and techniques for sentiment analysis and make informed decisions about which methods to use for specific tasks and data types.
 
-------------------------------Logistic Regresion for Sentiment Analysis - Part 1 ---------------------------------------
+It's important to note, that that the performance of a sentiment analysis model can vary depending on the dataset it is trained on. For example, financial texts may have a different vocabulary and language structure compared to tweets, and thus a model trained on the Sentiment140 dataset may not perform as well on financial texts.
 
-Dataset: The Sentiment140 dataset is available as a CSV file at the following URL: http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip  You can download this file and extract it to obtain the dataset.
+## Data
 
-About Dataset:
-This is the sentiment140 dataset. It contains 1,600,000 tweets extracted using the twitter api . The tweets have been annotated (0 = negative, 4 = positive) and they can be used to detect sentiment .
+The Sentiment140 dataset is a large dataset of tweets that have been annotated with sentiment labels (0 = negative, 4 = positive). The dataset contains 1.6 million tweets and is available for download as a CSV file at the URL http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip. The dataset contains 6 fields:
 
-It contains the following 6 fields:
-
-target: the polarity of the tweet (0 = negative, 2 = neutral ( no neutral in this data) , 4 = positive)
-ids: The id of the tweet (for example 2087)
-date: the date of the tweet (for example: Sat May 16 23:58:44 UTC 2009)
-flag: The query (lyx). If there is no query, then this value is NO_QUERY.
-user: the user that tweeted (for example: robotickilldozr)
-text: the text of the tweet (for example: Lyx is cool)
-
-Acknowledgements:
-The official link regarding the dataset with resources about how it was generated is 
-http://help.sentiment140.com/for-students 
-
-
+**target**: the polarity of the tweet (0 = negative, 2 = neutral ( no neutral in this data) , 4 = positive)
+**ids**: The id of the tweet (for example 2087)
+**date**: the date of the tweet (for example: Sat May 16 23:58:44 UTC 2009)
+**flag**: The query (lyx). If there is no query, then this value is NO_QUERY.
+**user**: the user that tweeted (for example: robotickilldozr)
+**text**: the text of the tweet (for example: Lyx is cool)
+It was extracted using the twitter API and can be used for sentiment analysis. The official website for the dataset with resources about how it was generated is http://help.sentiment140.com/for-students.
 
 Methology:
 1. Collect a dataset of texts annotated with opinions and emotions.
 2. Preprocess the data: lowercasing, tokenization, removing stop words and punctuation. It's important to note, that I test some preprocessing options, with and without removing stop words and punctuation,with and without stemming, in order to understant the impact on sentiment analysis. 
 3. Extract features from the text. Some potential features for this task might include word n-grams.
-4. Train a classifier on the extracted features: logistic regression (part 1). 
-5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, and F1 score.
+4. Train a classifier on the extracted features: for example - logistic regression (part 1). 
+5. Evaluate the classifier on a held-out test set. Measure the performance of the classifier using metrics such as precision, recall, F1 score, ctr.
+
+##Part 1: **Logistic Regresion for Sentiment Analysis**
 
 Results:
 

@@ -7,6 +7,7 @@ In the code provided, you will find the results of using different models, along
 3. SVD-XGBoost
 
 Pretrained models:
+
 3. NLTK: pretrained "SentimentIntensityAnalyzer"
 4. Flair
 5. Zero-shot Sentiment Prediction

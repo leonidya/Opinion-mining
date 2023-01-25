@@ -111,9 +111,6 @@ results:
 ![image](https://user-images.githubusercontent.com/53173112/214481617-2a444a3a-76ea-4c20-849e-5cd0bfb36738.png)
 ![image](https://user-images.githubusercontent.com/53173112/214481653-5175f4ec-6fd4-4eed-9660-052944169054.png)
 
-Summary:
-
-Pretrained Glove embedings with Logit model until now is giving the best results. 
 
 ## Part 5: Glove + XGBoost 
 

@@ -115,6 +115,7 @@ results:
 ![image](https://user-images.githubusercontent.com/53173112/214481653-5175f4ec-6fd4-4eed-9660-052944169054.png)
 
 Summary:
+
 Pretrained Glove embedings with Logit model until now is giving the best results. 
 
 ## Part 5: Glove + XGBoost 
@@ -124,7 +125,9 @@ Pretrained Glove embedings with Logit model until now is giving the best results
 ![image](https://user-images.githubusercontent.com/53173112/214512654-73cba528-9eb5-4e72-bb5f-c71c2f5c01f9.png)
 ![image](https://user-images.githubusercontent.com/53173112/214512704-674457da-ddc9-4f69-9e7e-09dc6b942e52.png)
 ![image](https://user-images.githubusercontent.com/53173112/214512787-dcd83727-5cc1-4fae-8d0d-d7e091fc5a8a.png)
+
 Summary:
+
 Glove + XGBoost 5 - gives us little bit better results than Glove embedings with Logit model.
 
 ## Part 6: NLTK

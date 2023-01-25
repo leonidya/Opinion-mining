@@ -56,13 +56,15 @@ Methology:
 
 Results:
 
-On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked very well:
-A precision was 0.78 which means that the model makes very few false positive predictions (i.e. it correctly identifies a large proportion of positive cases). Recall is the proportion of true positive predictions among all actual positive cases. A recall was 0.81 which means that the model is identifying most of the actual positive cases. F1 score is the harmonic mean of precision and recall, and it combines both metrics into a single number. A F1 was 0.80 which indicates that the model has a good balance of precision and recall. In this case, the AUC score is 0.79, which means that the model is performing well. It is correctly distinguishing the positive class from the negative class with a good level of accuracy. 
+It looks like model performed well on the Sentiment140 dataset. The precision of 0.78 means that the model makes very few false positive predictions (i.e. it correctly identifies a large proportion of positive cases). Recall of 0.81 indicates that the model is identifying most of the actual positive cases. The F1 score of 0.80 is a harmonic mean of precision and recall, and it combines both metrics into a single number, it indicates that the model has a good balance of precision and recall.
+
+Additionally, the AUC score of 0.79 indicates that the model is performing well. AUC (Area Under the Receiver Operating Characteristic Curve) is a metric used to evaluate binary classification models. It measures the ability of the model to distinguish between the positive and negative classes. A score of 0.79 means that the model is correctly distinguishing the positive class from the negative class with a good level of accuracy.
+
+Overall, these results suggest that the Logistic Regresion has a good performance on the Sentiment140 dataset, with a good balance of precision and recall, and a high accuracy in classifying tweets as positive or negative.
 
 ![image](https://user-images.githubusercontent.com/53173112/213147178-b8e2590c-a026-460c-b4e4-2aa7caf73d8a.png)
 
-But then I used the same model on other data (from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment - I drop neutral sentiment):
-In my opnion, after some manual review of the twitter comments, sometimes it's hard to say if it's positive or not, they are more neutral. 
+**BUT** model's performance on the new dataset, which is sourced from https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment, was not as good as it was on the Sentiment140 dataset. The accuracy, precision, recall and F1 score values are lower than the previous one, and it seems that the model is better at recognizing negative sentiment than positive sentiment. This new dataset may have different characteristics than the Sentiment140 dataset, such as different vocabulary and language structure, which may have affected the model's performance. Additionally,  some comments in the new dataset are more neutral, which may have made it harder for the model to classify them as positive or negative.
 
 Accuracy: 0.7933454639979205
 
@@ -74,11 +76,12 @@ F1 score: 0.6353768536920961
 
 ![image](https://user-images.githubusercontent.com/53173112/213147017-00a5c762-48b3-4324-ac69-12ab1842f593.png)
 
-According to the results, the model seems to be better on recognizing negative sentiment. 
-
-This model may not be the best choice for this dataset. So, I tried other models/techniques to improve the results.
+This model may not be the best choice for the new dataset. So, I tried other models/techniques to improve the results.
 
 ## Part 2: SVD - Logistic Regresion
+
+In order to improve the performance of the model, I tried using SVD (Singular Value Decomposition) in combination with logistic regression. However, the results were not as good as the Logistic regression alone. SVD is a technique used to reduce the dimensionality of the feature space by removing noise or redundant features. While it can improve the accuracy of the model in some cases, it can also decrease the accuracy of the model by removing important information.
+
 
 Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265315-340e4879-8983-4f72-a93b-c5bd298d539b.png)
@@ -86,7 +89,7 @@ Results:
 ![image](https://user-images.githubusercontent.com/53173112/214265458-5e3e593b-99ef-44b0-b0cf-c69df2fe909f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214265605-f83497f8-b375-494c-b701-87aa03bd9b70.png)
 
-Summary: It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT,  In some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features. 
+Using SVD didn't improve the performance of the model as much as it was expected, but in some cases, it can be a useful technique in improving the accuracy of the model by reducing the dimensionality of the feature space. So, It looks like Logistic regresion is doing better, and yes, SVD can decrease the accuracy of the model by removing important information. BUT, in some cases, the use of SVD can improve the accuracy of the model by reducing the dimensionality of the feature space and removing noise or redundant features (it worth to check even if it takes time). 
 
 -----------------------------------------SVD - Xgboost Part - 3 ---------------------------------------
 

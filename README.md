@@ -146,8 +146,9 @@ It looks like it improved the precision but lowered the recall.
  
 Short Summary:
 
-It appears that the natural language processing (NLP) library NLTK is not accurately recognizing the sentiment of the text in the file. The main reason is not the model it's self, but the difficulty to make a decision ( NLTK gives an output of dictionary, for example: {'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}
-compound: a normalized score between -1 and 1, which indicates the overall sentiment of the text - sometimes we can have neutral 0.2, and neg 0.3, so is it neg or neutral? Now, we not always want to make specific desicion, for example in finance, when we want to make a sentiment analysis of the questions of analyst ask in earning calls. Maybe here we would like to have those 3 values in front of us, and then make a decision (hold, sell or buy). So this model will suit us well. But specifically in this project I want to recognize the sentiment of the text, where it will make a decision automatically - if it's positive, negative or neutral. Maybe because of the laziness, or maybe because this model doesn't fit, I would prefer to move to examine another models.
+It seems that the natural language processing (NLP) library NLTK is not effectively identifying the sentiment of the text in the given file. The primary cause of this issue is not the model itself, but the difficulty in making a decision. NLTK provides an output in the form of a dictionary, for example: {'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}. The "compound" value is a normalized score between -1 and 1, which indicates the overall sentiment of the text. However, it can be challenging to determine whether a score is negative, neutral, or positive, as sometimes a score can fall in between these categories. Sometimes we can have neutral 0.2, and neg 0.3, so is it neg or neutral? 
+
+In certain fields, such as finance, it may be beneficial to have access to all three values and make a decision accordingly. For example, during an earnings call, it may be useful to analyze the sentiment of analyst questions to make decisions about buying, selling, or holding a stock. However, in this specific project, the goal is to automatically recognize the sentiment of the text as positive or negative. Therefore, it may be necessary to consider using another model or Maybe because of the laziness, I would prefer to move to examine another models.
  
 ## Part 7: Flair 
 
@@ -195,7 +196,7 @@ Confusion Matrix
 
 Summary:
 
-As we can see, the model (logistic regression)  that has been pre-trained on unique data gives better results, at the same time, on the new data (which is a little different, and as we would expect)  results which are not impressive. FLAIR, however, gave worse brings relatively good results on the first data set, and better results on the second data set. Apparently Flair, deals better with different types of data, the model is more holistic. However, when there is enough labeled data it is better to make your own model, it will bring much better results.
+As observed, the pre-trained logistic regression model provides better results when applied to unique data. However, when applied to new data that is slightly different, the results are not as impressive. In contrast, the FLAIR model performed worse on the first data set, but gave better results on the second data set. This suggests that FLAIR is better equipped to handle different types of data, and is more versatile as a model. However, when there is a sufficient amount of labeled data, creating your own model will likely yield much better results.
 
 ## Part 8: Zero-shot Sentiment 
 
@@ -208,7 +209,7 @@ On http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip it worked well:
 ![image](https://user-images.githubusercontent.com/53173112/214004424-81ef4990-9336-49b3-ada1-2f2c1505651f.png)
 ![image](https://user-images.githubusercontent.com/53173112/214004523-6c58223b-27f7-4ad1-bbf6-d8888449b94c.png)
 
-It did better than flair - but it's hard to compare - I runned Flair on all the data, BUT Zero-shot Sentiment Prediction took a lot of time (~1.5days). So i decided to run in on a sample. 
+The reason for this is that while FLAIR was run on all the data, the Zero-Shot Sentiment Prediction took a significant amount of time (~1.5 days) and had to be run on a sample of the data instead. This could have affected the results and made the comparison less accurate.
 
 But on data ( tweets about airlane companies) where it has also neutral label:
 ![image](https://user-images.githubusercontent.com/53173112/214004787-78388731-9b26-46c9-ac03-c3fe79d3a02b.png)

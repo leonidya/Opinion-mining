@@ -247,8 +247,8 @@ F1 score: 0.826191801150065
 Summary: Hugging Face Zero-shot - is doing much better than flair (on both data sets), in recognizing Negative and Positive, with 0.93 AUC vs 0.86. About the model it's self, it's better on negative sentiment. 
 
 ## Part 9: Textblob
+ 
+The performance of the sentiment analysis on my specific dataset, particularly on tweets, was not as desired. Upon examination, I believe the threshold values set for classifying the sentiment of the text might be the root cause. In an effort to address this issue, I utilized the 'Textblob' library and set a threshold for classifying the sentiment as "negative" if the score was below 0, "positive" if it was above 0.1, and "neutral" if it was in between (data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) Despite my efforts, I found that changing the threshold values did not significantly improve the results(take a look at the code). This issue may require further investigation and a more comprehensive solution.
 
-Bad performance on my specific data, speccialy on tweets. In my opnion, it's the threeshold reason: 
-data_3['scores_Textblob'] = data_3['scores_Textblob'].progress_apply(lambda x: "negative" if x < 0 else ("positive" if x >0.1 else "neutral")) no simple solution, I tried to play with different threesholds but it din't improve the results ( take a look to the code )
 
 Summary: In progress...
